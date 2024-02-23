@@ -2,15 +2,21 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="menu2.js"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>La Paz Sports Menu</title>
 </head>
 <body>
-    <ul class="navbar">
-		<li><a href="#">Inicial</a></li>
-		<li><a href="contato.html"></a></li>
-		<li><a href="surprise.html">Surprise</a></li>
+    <ul class="navbar anta-regular">
+		<li><a class="anta-regular" href="#">Futebol</a></li>
+		<li><a href="contato.html">F1</a></li>
+		<li><a href="surprise.html">NBA</a></li>
+		<li><a href="surprise.html">NFL</a></li>
+		<li><a href="surprise.html">UFC</a></li>
+		<li><a href="surprise.html">Tênis</a></li>
+		<li><a href="surprise.html">Volei</a></li>
+		<li><a href="surprise.html">Baseball</a></li>
 	</ul>
 
     <nav class="side-bar">
@@ -63,7 +69,18 @@
 		</ul>
 	</nav>
 
-    <center><img class="imgnoticia" src="https://estaticos.globoradio.globo.com/fotos/2024/02/0c99790f-b130-419c-8956-b74c25d389cc.jpg.640x360_q75_box-0%2C64%2C680%2C447_crop_detail.jpg"></center>
+    <center><div class="carousel">
+    			<button id="prevBtn" onclick="prevImage()">&#10094;</button>
+        		<img id="carouselImg" src="https://estaticos.globoradio.globo.com/fotos/2024/02/0c99790f-b130-419c-8956-b74c25d389cc.jpg.640x360_q75_box-0%2C64%2C680%2C447_crop_detail.jpg">
+				<button id="nextBtn" onclick="nextImage()">&#10095;</button>
+    		</div></center>
+			
+	<center><p class="midias-p anta-regular">ONG SVA Realiza Campanha de Castração para Controle Populacional de Animais de Rua.</p></center>
+	<center><sub>Data: 22/02/2024</sub></center>
 
 
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</html>
