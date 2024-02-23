@@ -1,3 +1,8 @@
+body {
+	margin: 100px;
+	margin-top: 0;
+}
+
 nav.side-bar{
 	width: 52px;
 	height: 100%;
@@ -74,7 +79,7 @@ ul li.item-menu a .icon > i {
 
 .navbar li a {
 	color: #FFF;
-	padding: 15px;
+	padding: 10px;
 	text-decoration: none;
 	display: inline-block;
 	transition: background .4s;
@@ -88,4 +93,43 @@ ul li.item-menu a .icon > i {
 .imgnoticia {
     width: 1200px;
     border-radius: 5px;
+}
+
+.anta-regular {
+	font-family: "Anta", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+#carouselImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
