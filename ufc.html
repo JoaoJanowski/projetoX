@@ -94,7 +94,24 @@
             width: 100%;
         }
 
-        /* Restante do CSS permanece inalterado */
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-top: 250px;
+        }
+
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            overflow: hidden;
+        }
+
+
 
     </style>
 </head>
@@ -132,34 +149,29 @@
         </section>
 
         <section id="lutadores">
-            <h2>Lutadores</h2>
+            <h2>PESO PENA</h2>
             <article class="article">
-                <img src="https://via.placeholder.com/800x400" alt="Lutador 1">
-                <h3>Lutador 1</h3>
-                <p>Informações sobre o Lutador 1...</p>
+                <img src="https://lncimg.lance.com.br/uploads/2020/06/09/5edff07a95a09.jpeg" alt="Lutador 1">
+                <h3>José Aldo</h3>
+                <p>José Aldo esta fazendo contando vitória antes da hora contra o McGregor, "Ele vai conhecer o verdadeiro gorila." Hoje será uma grande luta.</p>
             </article>
 
             <article class="article">
-                <img src="https://via.placeholder.com/800x400" alt="Lutador 2">
-                <h3>Lutador 2</h3>
-                <p>Informações sobre o Lutador 2...</p>
+                <img src="https://midia.gruposinos.com.br/_midias/jpg/2016/11/14/mcgregor_4-2855139.jpg" alt="Lutador 2">
+                <h3>Lutado</h3>
+                <p>McGregor responde a altura as provocações de José Aldo, falando que irá nocautear ele no 1 round.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/47vWeADxz2I?si=RNG7PYw4LDbHbzp3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </article>
         </section>
-
-        <section id="eventos">
-            <h2>Próximos Eventos</h2>
-            <article class="article">
-                <img src="https://via.placeholder.com/800x400" alt="Evento 1">
-                <h3>Evento 1</h3>
-                <p>Detalhes sobre o Evento 1...</p>
-            </article>
-
-            <article class="article">
-                <img src="https://via.placeholder.com/800x400" alt="Evento 2">
-                <h3>Evento 2</h3>
-                <p>Detalhes sobre o Evento 2...</p>
-            </article>
-        </section>
+        <div class="carousel">
+            <div class="carousel-content">
+              <div class="carousel-item"><img class="nfl1" src="data:image/png;base64,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"></div>
+              <div class="carousel-item"><img class="nfl2" src="https://img.band.uol.com.br/image/2023/11/18/nikolas-motta-joga-jab-de-esquerda-em-trey-ogden-pelo-ufc-vegas-82-175833.webp"></div>
+              <div class="carousel-item"><img class="nfl3" src="https://uploads.metropoles.com/wp-content/uploads/2023/07/31130313/Brasileira-Priscilla-Pedrita-em-luta-do-UFC.jpg"></div>
+              <div class="carousel-item"><img class="nfl4" src="https://oquefazeremvegas.com/wp-content/uploads/2019/01/assistir-ufc-em-las-vegas.jpg"></div>
+              <div class="carousel-item"><img class="nfl5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvF4Kw5aknv_gjJcHZ6fiVeQlJRnc4I4UOg&usqp=CAU "></div>
+            </div>
+      
     </main>
 
     <footer>
