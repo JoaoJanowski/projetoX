@@ -1,6 +1,5 @@
 body {
-	margin: 100px;
-	margin-top: 0;
+	margin: 100px;	
 }
 
 nav.side-bar{
@@ -132,4 +131,13 @@ ul li.item-menu a .icon > i {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.imgtenis {
+	width: 1000px;
+	float: right;
+}
+
+.tenistabela {
+	float: left;
 }
