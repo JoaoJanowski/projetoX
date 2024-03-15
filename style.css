@@ -171,3 +171,56 @@ ul li.item-menu a .icon > i {
 	cursor: pointer;
 	opacity: 0.7;
 }	
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to checkboxes */
+.checkbox-container {
+    margin: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"] + label:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    width: 6px;
+    height: 2px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked + label:after {
+    display: block;
+}
