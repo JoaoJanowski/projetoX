@@ -1,176 +1,4 @@
-body {
-	margin: 100px;	
-}
-
-nav.side-bar{
-	width: 52px;
-	height: 100%;
-	background-color: #dbdbdb;
-	padding: 30px 0 30px 1%;
-	box-shadow: 1.5px 0 0 #000000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	transition: .2s;
-}
-
-nav.side-bar:hover {
-	width: 300px;
-}
-
-.expansão {
-	width: 100%;
-	padding-left: 10px;
-}
-
-.expansão > i {
-	color: #490000;
-	font-size: 24px;
-	cursor: pointer;
-
-}
-
-ul {
-	height: 100%;
-	list-style-type: none;
-}
-
-ul li.item-menu {
-	transition: .2s;
-}
-
-ul li.ativo {
-	background-color: #b10000;
-}
-
-ul li.item-menu:hover {
-	background: #990101a4;
-}
-
-ul li.item-menu a {
-	color: #000000;
-	text-decoration: none;
-	font-size: 25px;
-	padding: 5px;
-	display: flex;
-	margin-bottom: 20px;
-	line-height: 40px;
-}
-
-ul li.item-menu a .txt-link {
-	margin-left: 15px;
-}
-
-ul li.item-menu a .icon > i {
-	font-size: 25px;
-}
-
-.navbar {
-	list-style: none;
-	padding: 0;
-	background-color: rgb(134, 0, 0);
-}
-
-.navbar li {
-	display: inline;
-}
-
-.navbar li a {
-	color: #FFF;
-	padding: 10px;
-	text-decoration: none;
-	display: inline-block;
-	transition: background .4s;
-	font-family: 'Poppins', sans-serif;
-}
-
-.navbar li a:hover {
-	background-color: rgb(111, 54, 49);
-}
-
-.imgnoticia {
-    width: 1200px;
-    border-radius: 5px;
-}
-
-.anta-regular {
-	font-family: "Anta", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-  
-.carousel {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#prevBtn, #nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-}
-
-#prevBtn {
-    left: 0;
-}
-
-#nextBtn {
-    right: 0;
-}
-
-#carouselImg {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.imgtenis {
-	width: 1000px;
-	float: right;
-}
-
-.tenistabela {
-	float: left;
-}
-.carousel {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	padding-top: 250px;
-}
-
-.carousel-content {
-	display: flex;
-	transition: transform 0.5s ease;
-}
-
-.carousel-item {
-	min-width: 100%;
-	overflow: hidden;
-}
-
-.next,
-.prev {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: #212121;
-	border: none;
-	color: white;
-	padding: 10px 12px;
-	font-size: 24px;
-	cursor: pointer;
-	opacity: 0.7;
-}	
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     margin: 0;
@@ -178,194 +6,130 @@ ul li.item-menu a .icon > i {
     box-sizing: border-box;
 }
 
-/* Apply styles to checkboxes */
-.checkbox-container {
-    margin: 20px;
+body {
+    height: 100vh;
+    background-color: #f7f7f7;
 }
 
-input[type="checkbox"] {
-    display: none;
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: #dbdbdb;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #490000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    font-family: "Josefin Sans", sans-serif;
 }
 
-input[type="checkbox"] + label {
-    position: relative;
-    padding-left: 25px;
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: #490000;
+    font-size: 24px;
     cursor: pointer;
 }
 
-input[type="checkbox"] + label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #aaa;
-    background-color: #fff;
+ul {
+    height: 100%;
+    list-style-type: none;
 }
 
-input[type="checkbox"]:checked + label:before {
-    background-color: #2196F3;
+ul li.item-menu {
+    transition: .3s;
 }
 
-input[type="checkbox"] + label:after {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: 9px;
-    width: 6px;
-    height: 2px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    display: none;
+ul li.ativo {
+    background-color: #df00007e;
 }
 
-input[type="checkbox"]:checked + label:after {
-    display: block;
+ul li.item-menu:hover {
+    background: #df00007e;
 }
 
-.calendario {
-    width: 500px;
-    float: right;
-}.carousel {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            padding-top: 250px;
-        }
+ul li.item-menu a {
+    color: #490000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
 
-        .carousel-content {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
 
-        .carousel-item {
-            min-width: 100%;
-            overflow: hidden;
-        }
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
 
-        .vai {
-            position: absolute;
-            right: 20px;
-            top: 400px;
-            background-color: grey;
-            border: none;
-            color: white;
-            padding: 10px 12px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 56px;
-            cursor: pointer;
-            opacity: 0.5;
-        }
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}
 
-        .volta {
-            position: absolute;
-            left: 20px;
-            top: 400px;
-            background-color: grey;
-            border: none;
-            color: white;
-            padding: 10px 12px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 56px;
-            cursor: pointer;
-            opacity: 0.5;
-        }
-body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+hr {
+    height: 2.5px;
+    color: #490000;
+}
 
-        header {
-            background-color: #d90000;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+/*Barra de navegação 2*/
 
-        .logo img {
-            max-width: 100px;
-            height: auto;
-        }
+.container {
+    background-color: #dbdbdb;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 5px #490000;
+    padding-right: 20px;
+}
 
-        .ufc {
-            color: #d90000;
-        }
+header {
+    color: #000000;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
-        h1 {
-            margin: 10px 0;
-        }
+.logo img {
+    max-width: 100px;
+    cursor: pointer;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            background-color: #333;
-            text-align: center;
-            margin: 0;
-        }
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+.nav-links li a {
+    text-decoration: none;
+    color: #490000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+}
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding: 10px;
-            display: inline-block;
-        }
+.nav-links li a:hover {
+    color: #b40000;
+    transition: .1s;
+}
 
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #1a1a1a;
-        }
-
-        .article {
-            margin-bottom: 20px;
-        }
-
-        .article img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        
-        .ufc1 {
-
-        width: 1200px; 
-        height: 80%;  
-        object-fit: cover;
-        }
+.nav-links li.selected a {
+    color: #df00007e; /* Altera a cor do texto quando a aba está selecionada */
+}
