@@ -133,3 +133,84 @@ header {
 .nav-links li.selected a {
     color: #df00007e; /* Altera a cor do texto quando a aba está selecionada */
 }
+
+.color-mode {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-mode h1 {
+    color: #000000;
+}
+
+.trilho {
+    width: 350px;
+    height: 150px;
+    background-color: #c3c3c3;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark {
+    background-color: #4d4d4d;
+}
+
+.trilho.dark .indicador {
+    left: 200px;
+    background-color: #000000;
+}
+
+body.dark {
+    background-color: #212121;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body,
+.color-mode {
+    transition: background-color 0.5s;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.color-mode.dark {
+    background-color: #212121;
+}
+
+body.dark {
+    background-color: #212121;
+}
+
+body.dark nav.menu-lateral {
+    background-color: #333;
+}
+
+body.dark nav.menu-lateral ul li.item-menu a {
+    color: #fff;
+}
+
+body.dark .container {
+    background-color: #333;
+}
+
+body.dark .container a {
+    color: #fff;
+}
