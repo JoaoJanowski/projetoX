@@ -91,12 +91,40 @@
         </ul>
     </nav>
 
-<div class="color-mode">
+    <div class="color-mode">
         <h1>Modo dark e modo light</h1>
         <div class="trilho" id="trilho">
             <div class="indicador"></div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let trilho = document.getElementById('trilho');
+            let body = document.body;
+    
+            // Verificar e aplicar o modo escuro salvo
+            let modoEscuroAtivo = localStorage.getItem('modoEscuroAtivo');
+            if (modoEscuroAtivo === 'true') {
+                trilho.classList.add('dark');
+                body.classList.add('dark');
+            }
+    
+            // Adicionar evento de clique ao botão de alternância de modo
+            trilho.addEventListener('click', () => {
+                // Alternar a classe 'dark' no botão e no body
+                trilho.classList.toggle('dark');
+                body.classList.toggle('dark');
+                
+                // Salvar o estado do modo escuro no armazenamento local
+                localStorage.setItem('modoEscuroAtivo', body.classList.contains('dark'));
+            });
+        });
+    </script>
+    
+
+    <!-- Referenciar o arquivo JavaScript externo -->
     <script src="menu.js"></script>
+    <script src="darkmode.js"></script>
 </body>
 </html>
