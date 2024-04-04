@@ -88,6 +88,7 @@ hr {
     color: #490000;
 }
 
+
 /*Barra de navegação 2*/
 
 .container {
@@ -131,8 +132,10 @@ header {
 }
 
 .nav-links li.selected a {
-    color: #df00007e; /* Altera a cor do texto quando a aba está selecionada */
+    color: #df00007e;
 }
+
+/* Dark mode */
 
 .color-mode {
     display: flex;
@@ -204,7 +207,7 @@ body.dark nav.menu-lateral {
 }
 
 body.dark nav.menu-lateral ul li.item-menu a {
-    color: #fff;
+    color: #fff; /* Altere para a cor desejada para os links no modo escuro */
 }
 
 body.dark .container {
@@ -214,3 +217,4 @@ body.dark .container {
 body.dark .container a {
     color: #fff;
 }
+
