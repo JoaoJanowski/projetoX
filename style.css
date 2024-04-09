@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 
 * {
     margin: 0;
@@ -9,6 +11,28 @@
 body {
     height: 100vh;
     background-color: #f7f7f7;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+h1 {
+    margin-left: 125px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 p {
+    font-family: "Lato", sans-serif;
 }
 
 nav.menu-lateral {
@@ -218,3 +242,93 @@ body.dark .container a {
     color: #fff;
 }
 
+/*outra fita*/
+
+.featured-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.featured-container2 {
+    display: flex;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#featured-news {
+    padding: 50px 0;
+}
+
+.news-item {
+    margin-bottom: 30px; /* Adicione uma margem inferior para criar espaçamento entre as notícias */
+}
+
+
+.sports-news-item {
+    margin-bottom: 50px;
+}
+
+.featured-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Definir largura como 100% */
+    object-fit: cover;
+}
+
+.sports-news-item h2 {
+    margin-top: 10px;
+}
+
+.sports-news-item p {
+    color: #555;
+}
+
+.sports-news-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sports-news-btn:hover {
+    background-color: #555;
+}
+
+.news-column {
+    width: 50%; /* Cada coluna ocupará 50% da largura do contêiner */
+    float: left; /* Alinha as colunas lado a lado */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+    padding: 0 10px; /* Adiciona um pequeno espaçamento entre as colunas */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.h1-menu {
+    margin-left: 355px;
+    font-size: 45px;
+}
