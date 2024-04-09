@@ -91,6 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Script.js
+// Aqui você pode adicionar interações ou funcionalidades adicionais
+
+// Exemplo de funcionalidade de botão
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Botão clicado!');
+    });
+});
+
+
 
 
 
