@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -231,7 +231,7 @@ body.dark nav.menu-lateral {
 }
 
 body.dark nav.menu-lateral ul li.item-menu a {
-    color: #fff; /* Altere para a cor desejada para os links no modo escuro */
+    color: #fff; 
 }
 
 body.dark .container {
@@ -242,7 +242,7 @@ body.dark .container a {
     color: #fff;
 }
 
-/*outra fita*/
+/*Notícias iniciais*/
 
 .featured-container {
     max-width: 1200px;
@@ -278,7 +278,7 @@ header nav ul li a {
 }
 
 .news-item {
-    margin-bottom: 30px; /* Adicione uma margem inferior para criar espaçamento entre as notícias */
+    margin-bottom: 30px; 
 }
 
 
@@ -289,7 +289,7 @@ header nav ul li a {
 .featured-container img {
     max-width: 100%;
     height: auto;
-    width: 100%; /* Definir largura como 100% */
+    width: 100%; 
     object-fit: cover;
 }
 
@@ -315,10 +315,10 @@ header nav ul li a {
 }
 
 .news-column {
-    width: 50%; /* Cada coluna ocupará 50% da largura do contêiner */
-    float: left; /* Alinha as colunas lado a lado */
-    box-sizing: border-box; /* Inclui padding e borda na largura e altura */
-    padding: 0 10px; /* Adiciona um pequeno espaçamento entre as colunas */
+    width: 50%;
+    float: left; 
+    box-sizing: border-box; 
+    padding: 0 10px; 
 }
 
 footer {
