@@ -92,41 +92,55 @@
         </ul>
     </nav>
 <div>
-    <section class="history">
-        <h2>História</h2>
-        <p>A Formula 1 é a categoria máxima do automobilismo. Começou em 1950 e desde então tem sido o ponto de referência para inovação e tecnologia no esporte a motor.</p>
-    </section>
+    
+      <section class="destaque">
+        <div class="con-f1">
+          <div class="carousel">
+            <img src="noticia1.jpg" alt="Notícia 1" class="slide">
+            <img src="noticia2.jpg" alt="Notícia 2" class="slide">
+            <img src="noticia3.jpg" alt="Notícia 3" class="slide">
+          </div>
+        </div>
+      </section>
+    
+      <section class="noticias">
+        <div class="con-f1">
+          <div class="noticia">
+            <img src="noticia4.jpg" alt="Notícia 4" class="noticia-imagem">
+            <h2 class="noticia-titulo">Grande Prêmio da Itália: Resultados e Análise</h2>
+            <p class="noticia-descricao">Confira os resultados emocionantes do Grande Prêmio da Itália e uma análise detalhada das principais performances.</p>
+          </div>
+          <div class="noticia">
+            <img src="noticia5.jpg" alt="Notícia 5" class="noticia-imagem">
+            <h2 class="noticia-titulo">Entrevista Exclusiva com Piloto de Fórmula 1</h2>
+            <p class="noticia-descricao">Leia a entrevista exclusiva com um piloto de Fórmula 1 renomado, onde ele compartilha insights sobre a temporada atual e seus planos para o futuro.</p>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="rodape">
+        <div class="con-f1">
+          <p class="rodape-texto">© 2024 Portal de Notícias de Fórmula 1. Todos os direitos reservados.</p>
+        </div>
+      </footer>
 
-    <section class="teams">
-        <h2>Equipes</h2>
-        <p>Atualmente, a Formula 1 conta com equipes como Mercedes, Ferrari, Red Bull Racing, McLaren, entre outras.</p>
-    </section>
+      
+      <script>
+        // Função para criar um carrossel de imagens
+window.onload = function() {
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
 
-    <section class="drivers">
-        <h2>Pilotos</h2>
-        <p>Alguns dos pilotos mais famosos da história da Formula 1 incluem Ayrton Senna, Michael Schumacher, Lewis Hamilton e Sebastian Vettel.</p>
-    </section>
-	
-    <section class="circuits">
-        <h2>Circuitos</h2>
-        <p>A Formula 1 é disputada em circuitos ao redor do mundo, incluindo lendários como o Circuito de Mônaco, Spa-Francorchamps e Silverstone.</p>
-    </section>
-</div>
+  setInterval(() => {
+    slides[index].style.display = 'none';
+    index = (index + 1) % slides.length;
+    slides[index].style.display = 'block';
+  }, 5000);
+};
 
-	
-    <footer>
-        <p>&copy; 2024 F1 Information. All rights reserved.</p>
-    </footer>
-	</body>
-	</html>
-
-	<section class="">
-		<h1>Calendario da F1 2024</h1>
-		<img class="calendario" src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/11/30/245222601-calendario-f1-2024.jpg" alt="Descrição da imagem">
-	</section>
+      </script>
 
 	<script src="menu.js"></script>
 	<script src="darkmode.js"></script>
 </body>
 </html>
-
