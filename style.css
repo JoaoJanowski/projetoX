@@ -24,7 +24,10 @@ body {
     font-weight: 900;
     font-style: normal;
   }
-  
+
+p {
+    font-family: "Poppins", sans-serif;
+}
 
 h1 {
     margin-left: 125px;
@@ -281,7 +284,6 @@ header nav ul li a {
     margin-bottom: 30px; 
 }
 
-
 .sports-news-item {
     margin-bottom: 50px;
 }
@@ -332,173 +334,231 @@ footer {
     margin-left: 355px;
     font-size: 45px;
 }
-.cabecalho {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .cabecalho-titulo {
-    font-size: 2em;
-    text-align: center;
-  }
-  
-  .cabecalho-navegacao {
-    text-align: center;
-  }
-  
-  .cabecalho-lista {
-    list-style-type: none;
-  }
-  
-  .cabecalho-item {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .cabecalho-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .destaque {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .slide {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+
+/*Equipe*/
+
+.con-equipe {
     width: 80%;
-    margin: 0 10%;
+    margin: auto;
+    overflow: hidden;
   }
   
-  .noticias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .noticia {
-    width: 40%;
-    margin: 10px;
-  }
-  
-  .noticia-imagem {
-    width: 100%;
-  }
-  
-  .noticia-titulo {
-    font-size: 1.5em;
-  }
-  
-  .rodape {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-
-/*f1*/
-
-.con-f1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Estilos do cabeçalho */
   .header {
-    background-color: #333;
-    color: #fff;
+    color: #490000;
     padding: 20px 0;
+    margin-left: 31.4%;
   }
   
   .header-title {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 60px;
   }
   
   .header-nav {
     text-align: center;
   }
   
-  .header-list {
-    list-style-type: none;
+  .header-nav-list {
+    text-align: center;
   }
   
-  .header-item {
-    display: inline-block;
+  .header-nav-item {
+    display: inline;
     margin-right: 20px;
   }
   
-  .header-link {
+  .header-nav-link {
     color: #fff;
     text-decoration: none;
   }
   
-  /* Estilos do destaque */
-  .highlight {
-    background-color: #444;
-    padding: 50px 0;
-    color: #fff;
-  }
-  
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-  }
-  
-  .carousel-image {
-    flex: 0 0 auto;
-    width: 400px;
-    height: 250px;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Estilos das notícias */
-  .news {
+  .section {
     padding: 50px 0;
   }
   
-  .news-article {
-    display: flex;
-    margin-bottom: 40px;
+  .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-content {
+    font-size: 25px;
+    text-align: center;
   }
   
-  .news-image {
-    flex: 0 0 auto;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    margin-right: 20px;
+  .service {
+    text-align: center;
+    margin-bottom: 30px;
   }
   
-  .news-content {
-    flex: 1;
-  }
-  
-  .news-title {
-    font-size: 1.5rem;
+  .service-title {
+    font-size: 30px;
+    text-align: center;
     margin-bottom: 10px;
   }
   
-  .news-description {
-    font-size: 1rem;
+  .service-description {
+    text-align: center;
   }
   
-  /* Estilos do rodapé */
+  .portfolio-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-item-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-item-title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item-description {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
   .footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
   }
+
+  /*Parcerias*/
+
+  .con-site {
+    width: calc(100% - 400px); /* Considera a margem esquerda e direita */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .cabecalho-titulo {
+    color:#490000;
+    margin-left: 43%;
+    font-size: 60px;
+  }
+  
+  .secao {
+    padding: 50px 0;
+  }
+  
+  .secao-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .parceria {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .parceria-imagem {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .parceria-titulo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .parceria-descricao {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .grupo-formulario {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-rotulo {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-input,
+  .formulario-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulario-botao {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rodape {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
