@@ -503,3 +503,12 @@ footer {
     text-align: center;
     padding: 20px 0;
   }
+.news-article {
+    margin-bottom: 20px;
+    display: flex;
+}
+.news-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
