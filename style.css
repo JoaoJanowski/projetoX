@@ -879,3 +879,64 @@ button:hover {
   font-size: 14px;
   margin-top: 10px;
 }
+/* Futebol */
+
+.con-menu {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.con-menu header {
+  background-color: #490000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.con-menu header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.news-article {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.news-image {
+  flex: 0 0 auto;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.news-image.left {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.news-image.right {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.news-content {
+  flex: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
