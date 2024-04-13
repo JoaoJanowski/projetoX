@@ -159,89 +159,6 @@ header {
     color: #df00007e;
 }
 
-/* Dark mode */
-
-.color-mode {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.color-mode h1 {
-    color: #000000;
-}
-
-.trilho {
-    width: 350px;
-    height: 150px;
-    background-color: #c3c3c3;
-    border-radius: 150px;
-    position: relative;
-    cursor: pointer;
-}
-
-.trilho .indicador {
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: scale(.9);
-    position: absolute;
-    left: 0;
-    transition: .5s;
-}
-
-.trilho.dark {
-    background-color: #4d4d4d;
-}
-
-.trilho.dark .indicador {
-    left: 200px;
-    background-color: #000000;
-}
-
-body.dark {
-    background-color: #212121;
-}
-
-body.dark h1 {
-    color: #fff;
-}
-
-body,
-.color-mode {
-    transition: background-color 0.5s;
-}
-
-body {
-    background-color: #f7f7f7;
-}
-
-.color-mode.dark {
-    background-color: #212121;
-}
-
-body.dark {
-    background-color: #212121;
-}
-
-body.dark nav.menu-lateral {
-    background-color: #333;
-}
-
-body.dark nav.menu-lateral ul li.item-menu a {
-    color: #fff; 
-}
-
-body.dark .container {
-    background-color: #333;
-}
-
-body.dark .container a {
-    color: #fff;
-}
-
 /*Notícias iniciais*/
 
 .featured-container {
@@ -444,7 +361,298 @@ footer {
     text-decoration: none;
   }
   
-  /* Estilos do destaque */
+  .highlight {
+    background-color: #444;
+    padding: 50px 0;
+    color: #fff;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .carousel-image {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .news {
+    padding: 50px 0;
+  }
+  
+  .news-article {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .news-image {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .news-content {
+    flex: 1;
+  }
+  
+  .news-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .news-description {
+    font-size: 1rem;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .news-article {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.news-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+/*Equipe*/
+
+.con-equipe {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .header {
+    color: #490000;
+    padding: 20px 0;
+    margin-left: 31.4%;
+  }
+  
+  .header-title {
+    font-size: 60px;
+  }
+  
+  .header-nav {
+    text-align: center;
+  }
+  
+  .header-nav-list {
+    text-align: center;
+  }
+  
+  .header-nav-item {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .header-nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-content {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .service {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .service-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    text-align: center;
+  }
+  
+  .portfolio-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-item-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-item-title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item-description {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .con-site {
+    width: calc(100% - 400px); /* Considera a margem esquerda e direita */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .cabecalho-titulo {
+    color:#490000;
+    margin-left: 43%;
+    font-size: 60px;
+  }
+  
+  .secao {
+    padding: 50px 0;
+  }
+  
+  .secao-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .parceria {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .parceria-imagem {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .parceria-titulo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .parceria-descricao {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .grupo-formulario {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-rotulo {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-input,
+  .formulario-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulario-botao {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rodape {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
   .highlight {
     background-color: #444;
     padding: 50px 0;
@@ -464,7 +672,6 @@ footer {
     border-radius: 10px;
   }
   
-  /* Estilos das notícias */
   .news {
     padding: 50px 0;
   }
@@ -502,7 +709,7 @@ footer {
     text-align: center;
     padding: 20px 0;
   }
-
+  
   .news-article {
     margin-bottom: 20px;
     display: flex;
@@ -513,4 +720,162 @@ footer {
     height: auto;
     margin-right: 20px;
     margin-left: 200px; /* Adicionando margem à esquerda */
+}
+
+/*Calendário*/
+
+.con-calen {
+  margin-left: 325px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.calendar {
+  width: 50%; /* Metade da largura da página */
+  max-width: 400px; /* Defina a largura máxima para manter o calendário agradável */
+  padding: 20px;
+  font-size: 18px; /* Tamanho da fonte aumentado */
+}
+
+.calendar .event {
+  margin-bottom: 10px; /* Espaçamento entre os eventos */
+}
+
+.calendar .event .event-date {
+  font-family: "Arial Black", sans-serif; /* Mudança da fonte das datas */
+}
+
+.calendar .event .event-description {
+  font-family: "Times New Roman", serif; /* Mudança da fonte do texto abaixo das datas */
+  font-size: 16px; /* Tamanho da fonte do texto abaixo das datas */
+  color: #555; /* Cor do texto abaixo das datas */
+}
+
+.photos {
+  width: 50%; /* Metade da largura da página */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.photos img {
+  width: 450px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar,
+.photos {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-calendario {
+  margin-left: 21%;
+  max-width: 350px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 20px; /* Adiciona um espaço entre a logo e o calendário */
+}
+
+.results {
+  margin-left: 320px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.results h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+}
+
+.result {
+  margin-bottom: 20px;
+}
+
+.result h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.result img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.result p {
+  font-size: 18px;
+}
+
+.titulo-calen {
+  display: flex;
+  align-items: center;
+}
+
+.logo-calendario {
+  display: inline-block; /* Exibe a imagem como um elemento em linha */
+  max-width: 100px;
+  margin-right: 200px;
+}
+
+/* Configurações */
+
+.container-conta {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 100px;
+  background-color: #fff;
+  border-radius: 150px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container-conta h1 {
+  font-size: 85px;
+  margin-right: 125px;
+  margin-bottom: 75px;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #490000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #270000;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
 }
